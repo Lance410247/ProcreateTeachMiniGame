@@ -8,17 +8,32 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance;
 
     public GameObject[] toolPanels;
+    public GameObject[] settingPanels;
+    public GameObject[] settingButtons;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         Instance = this;
-
+        SettingButtonImageChange(settingButtons[0]);
         // 一開始全部關掉
         foreach (var panel in toolPanels)
             panel.SetActive(false);
     }
 
-
+    public void SettingButtonImageChange(GameObject button)
+    {
+        foreach (var _object in settingButtons)
+        {
+            if (_object.TryGetComponent<SettingButton>(out var settingBtn))
+            {
+                settingBtn.ChangeImageUnselecting();
+            }
+        }
+        if (button.TryGetComponent<SettingButton>(out var btn))
+        {
+            btn.ChangeImageSelecting();
+        }
+    }
 
     public void ShowImage(GameObject imageObject )
 
