@@ -45,7 +45,7 @@ public class Fingers : MonoBehaviour
         }
         catch
         {
-            //Debug.Log("無法變換手指圖片");
+            Debug.Log("無法變換手指圖片");
         }
     }
     public void NextFinger()
