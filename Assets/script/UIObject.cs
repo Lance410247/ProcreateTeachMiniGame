@@ -27,7 +27,7 @@ public class UIObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
        
         if (isHovering) return;
         isHovering = true;
-         Debug.Log("滑鼠進入");
+         //Debug.Log("滑鼠進入");
         highlight.Follow(GetComponent<RectTransform>());
         OnSelected();
     }
@@ -36,7 +36,7 @@ public class UIObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerExit(PointerEventData eventData)
     {
         isHovering = false;
-          Debug.Log("滑鼠離開");
+        //  Debug.Log("滑鼠離開");
         highlight.Hide();
     }
 
