@@ -1,0 +1,6 @@
+[show,1]
+[changeVariant,1]
+選擇工具[wait,2000][c]
+十分可惜這算是PROCREATE比較弱的功能[wait,2000][c]
+[changeVariant,0]
+[hide,1]

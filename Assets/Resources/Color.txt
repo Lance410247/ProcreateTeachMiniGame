@@ -1,0 +1,6 @@
+[show,1]
+[changeVariant,1]
+PROCREATE有提供許多種色環讓你選擇[wait,1500][r]
+選擇自己喜歡的就好[wait,2000][c]
+[changeVariant,0]
+[hide,1]

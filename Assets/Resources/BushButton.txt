@@ -1,0 +1,6 @@
+[show,1]
+[changeVariant,1]
+這是筆刷庫
+你可以在這裡選擇你喜歡的筆來作畫[wait,2000][c]
+[changeVariant,0]
+[hide,1]

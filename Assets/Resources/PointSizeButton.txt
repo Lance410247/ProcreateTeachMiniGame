@@ -1,0 +1,7 @@
+[show,1]
+[changeVariant,1]
+這裡是調整筆刷大小的地方[wait,1000][r]
+上下拉動就能調整筆刷大小[wait,2000][c]
+按一下可叫出筆刷形狀[wait,2000][c]
+[changeVariant,0]
+[hide,1]

@@ -1,0 +1,8 @@
+[show,1]
+[changeVariant,1]
+PROCREATE沒有做專門的橡皮擦[wait,2000][c]
+跟筆一樣選擇喜歡的就OK了[wait,2000][c]
+我自己除了用當前的筆刷來擦拭外[r]
+會用"噴槍"分類中的"軟筆刷"[wait,2000][c]
+[changeVariant,0]
+[hide,1]

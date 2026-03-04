@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     public GameObject[] settingButtons;
     public GameObject HighLightEffect;
     public GameObject HighLightEffectPanel;
-
+    public GameObject narrator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {

@@ -1,0 +1,6 @@
+[show,1]
+[changeVariant,1]
+變形工具[wait,1000][r]
+可以放大、縮小、改變形狀[wait,2000][c]
+[changeVariant,0]
+[hide,1]

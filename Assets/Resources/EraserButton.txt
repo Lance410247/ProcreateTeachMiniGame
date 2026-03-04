@@ -1,0 +1,5 @@
+[show,1]
+[changeVariant,1]
+這是橡皮擦[wait,2000][c]
+[changeVariant,0]
+[hide,1]

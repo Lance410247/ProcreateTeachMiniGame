@@ -1,0 +1,7 @@
+[show,1]
+[changeVariant,1]
+這裡是調色的地方[wait,2000][c]
+[changeVariant,2]
+電繪中第二重要的魔法![wait,2000][c]
+[changeVariant,0]
+[hide,1]

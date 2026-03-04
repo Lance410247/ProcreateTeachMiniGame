@@ -1,0 +1,5 @@
+[show,1]
+[changeVariant,1]
+這是各項雜七雜八設定的地方[wait,2000][c]
+[changeVariant,0]
+[hide,1]

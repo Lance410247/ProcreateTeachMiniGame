@@ -1,0 +1,6 @@
+[show,1]
+[changeVariant,1]
+選取工具[wait,2000][r]
+選取畫畫範圍的地方[wait,2000][c]
+[changeVariant,0]
+[hide,1]

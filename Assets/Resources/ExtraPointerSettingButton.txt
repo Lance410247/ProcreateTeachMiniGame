@@ -1,0 +1,6 @@
+[show,1]
+[changeVariant,1]
+按下可開啟進階筆刷設定
+[wait,2000][c]
+[changeVariant,0]
+[hide,1]

@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public enum FingersNumber
 {
+    NoFinger,
     OneFinger,
     TwoFinger,
     ThirdFinger,
-    Pen
+  //  Pen
 }
 public class Fingers : MonoBehaviour
 {
@@ -14,11 +15,16 @@ public class Fingers : MonoBehaviour
     [SerializeField] private GameObject _gameObject;
     private RectTransform rectTransform;
     [SerializeField]
-    private FingersNumber currentFinger = FingersNumber.OneFinger;
+    private FingersNumber currentFinger;
+
+
+    public bool lockFingerChange=false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        NextFinger();
         rectTransform = GetComponent<RectTransform>();
+      //  Debug.Log(currentFinger);
         ChangeFingerImage(currentFinger);
     }
     // Update is called once per frame
@@ -26,11 +32,14 @@ public class Fingers : MonoBehaviour
     void Update()
     {
         FollowMouse();
-
-        if (Input.GetMouseButtonDown(1)) // •k¡‰
+        if (!lockFingerChange) 
         {
-            NextFinger();
+            if (Input.GetMouseButtonDown(1)) // •k¡‰
+            {
+                NextFinger();
+            }
         }
+        
     }
     public void ChangeFingerImage(FingersNumber number)
     {

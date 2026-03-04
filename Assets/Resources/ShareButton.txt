@@ -1,0 +1,5 @@
+[show,1]
+[changeVariant,1]
+分享作品的按鈕[w]
+[changeVariant,0]
+[hide,1]

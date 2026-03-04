@@ -1,0 +1,8 @@
+[show,1]
+[changeVariant,1]
+偏好設定[wait,2000][c]
+強烈建議開啟"動態筆刷所放"[r]
+和"筆刷游標"[wait,2000][c]
+
+[changeVariant,0]
+[hide,1]

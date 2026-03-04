@@ -1,0 +1,8 @@
+[show,1]
+[changeVariant,1]
+這裡是插入參考照片的地方[wait,1000][r]
+添加文字也在這邊[wait,2000][c]
+往左滑可以加入私人照片[r]
+該照片就不會顯示在縮圖攝影了[wait,2000][c]
+[changeVariant,0]
+[hide,1]

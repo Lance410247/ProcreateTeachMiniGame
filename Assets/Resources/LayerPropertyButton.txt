@@ -1,0 +1,6 @@
+[show,1]
+[changeVariant,1]
+這個小小的N很重要[wait,1000][r]
+點開後可以調整圖層的屬性和透明度[wait,2000][c]
+[changeVariant,0]
+[hide,1]

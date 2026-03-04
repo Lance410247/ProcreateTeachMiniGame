@@ -1,0 +1,8 @@
+[changeVariant,1]
+各位晚安[wait,2000][c]
+我叫繪繪[wait,2000][c]
+是這次的解說員[wait,1000][r]
+兼任本社團的社娘[r]
+[changeVariant,0]
+(至少作者還在社團的時候還是)[wait,2000][c]
+[hide,1]
