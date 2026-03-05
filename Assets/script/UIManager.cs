@@ -1,4 +1,5 @@
 using Flower;
+using System.Collections.Generic;
 using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -20,6 +21,36 @@ public class UIManager : MonoBehaviour
     void Awake()
     {
         fs = FlowerManager.Instance.CreateFlowerSystem("default", true);
+        fs.RegisterCommand("changeVariant", (List<string> _params) =>
+        {
+            var _object = UIManager.Instance.narrator;
+            if (_object.TryGetComponent<Narrator>(out var _nar))
+            {
+
+            }
+            if (_params[0] == "0")
+            {
+                _nar.ChangeVariant(NarratorVariant.normal);
+
+
+            }
+            else if (_params[0] == "1")
+            {
+                _nar.ChangeVariant(NarratorVariant.talk);
+            }
+            else if (_params[0] == "2")
+            {
+                _nar.ChangeVariant(NarratorVariant.smile);
+            }
+            else
+            {
+                Debug.Log("¿ù»~ªº°Ñ¼Æ:" + _params);
+            }
+        });
+        fs.RegisterCommand("changeObjectActive", (List<string> _params) =>
+        {
+            fs.GetSceneObject(_params[0]).SetActive(!fs.GetSceneObject(_params[0]).activeSelf);
+        });
         Instance = this;
         try
         {
@@ -29,7 +60,7 @@ public class UIManager : MonoBehaviour
                 panel.SetActive(false);
         }
         catch {
-            Debug.Log("cant find  this object");
+            Debug.Log("cant find these objects");
         }
     }
 

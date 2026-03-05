@@ -15,30 +15,32 @@ public class BaseFunctionsSceneController : MonoBehaviour
         fs = UIManager.Instance.fs;
         fs.SetupDialog("NarratorDialogPrefab");
         fs.ReadTextFromResource("BaseFuntionintro");
-        fs.RegisterCommand("changeVariant", (List<string> _params) =>
-        {
-            var _object = UIManager.Instance.narrator;
-            if (_object.TryGetComponent<Narrator>(out var _nar))
-            {
+        /*  fs.RegisterCommand("changeVariant", (List<string> _params) =>
+          {
+              var _object = UIManager.Instance.narrator;
+              if (_object.TryGetComponent<Narrator>(out var _nar))
+              {
 
-            }
-            if (_params[0] =="0") {
-                _nar.ChangeVariant(NarratorVariant.normal); 
+              }
+              if (_params[0] =="0") {
+                  _nar.ChangeVariant(NarratorVariant.normal); 
 
 
-            }else if (_params[0] == "1")
-            {
-                _nar.ChangeVariant(NarratorVariant.talk);
-            }
-            else if (_params[0] == "2")
-            {
-                _nar.ChangeVariant(NarratorVariant.smile);
-            }
-            else
-            {
-                Debug.Log("岿粇把计:"+_params);
-            }
-        });
+              }else if (_params[0] == "1")
+              {
+                  _nar.ChangeVariant(NarratorVariant.talk);
+              }
+              else if (_params[0] == "2")
+              {
+                  _nar.ChangeVariant(NarratorVariant.smile);
+              }
+              else
+              {
+                  Debug.Log("岿粇把计:"+_params);
+              }
+          }
+
+          );*/
     }
 
     // Update is called once per frame
