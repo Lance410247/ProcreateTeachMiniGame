@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 設定畫布的地方[wait,2000][c]
 可以調整畫布大小[r]

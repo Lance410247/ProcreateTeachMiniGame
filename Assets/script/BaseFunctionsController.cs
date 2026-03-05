@@ -5,15 +5,16 @@ using System.Collections.Generic;
 public class BaseFunctionsSceneController : MonoBehaviour
 {
     FlowerSystem fs;
-    public static BaseFunctionsSceneController Instance;
+    //public static BaseFunctionsSceneController Instance;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Instance = this;
-        fs=  FlowerManager.Instance.CreateFlowerSystem("default",false);
+        // Instance = this;
+        // UIManager.Instance._dialogController = this.gameObject;
+        fs = UIManager.Instance.fs;
         fs.SetupDialog("NarratorDialogPrefab");
-        fs.ReadTextFromResource("intro");
+        fs.ReadTextFromResource("BaseFuntionintro");
         fs.RegisterCommand("changeVariant", (List<string> _params) =>
         {
             var _object = UIManager.Instance.narrator;
@@ -53,10 +54,5 @@ public class BaseFunctionsSceneController : MonoBehaviour
     }
 
 
-    public void  ReadDialog(string text)
-    {
-        fs.Stop();
-        fs.Resume();
-        fs.ReadTextFromResource(text);
-    }
+
 }

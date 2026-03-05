@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 上滑下滑可以調整圖層屬性[wait,2000][c]
 記得要等一下[wait,1000][r]

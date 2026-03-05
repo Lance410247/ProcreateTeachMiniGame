@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 偏好設定[wait,2000][c]
 強烈建議開啟"動態筆刷所放"[r]

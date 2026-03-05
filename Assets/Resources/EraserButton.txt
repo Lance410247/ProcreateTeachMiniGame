@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 這是橡皮擦[wait,2000][c]
 [changeVariant,0]

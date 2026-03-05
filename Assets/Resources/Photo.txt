@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 這裡是插入參考照片的地方[wait,1000][r]
 添加文字也在這邊[wait,2000][c]

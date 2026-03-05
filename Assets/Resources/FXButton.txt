@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 這裡是調色的地方[wait,2000][c]
 [changeVariant,2]

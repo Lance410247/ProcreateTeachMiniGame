@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 按下可開啟進階筆刷設定
 [wait,2000][c]

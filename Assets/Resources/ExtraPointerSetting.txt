@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 調整進階筆刷[wait,2000][c]
 上面選擇"懸浮時顯示"或"顯示二者"[r]

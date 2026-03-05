@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,2]
 分享你作品的地方![wait,2000][c]
 如果你想要連同圖層一起分享[r]

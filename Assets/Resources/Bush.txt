@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 這裡我推薦"素描"分類中的"6B鉛筆"[r]
 草稿與描線的好選擇[wait,2000][c]

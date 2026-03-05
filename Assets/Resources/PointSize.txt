@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 按下右上方的加號[r]
 可以加入常用尺寸[wait,2000][c]

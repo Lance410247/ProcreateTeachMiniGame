@@ -47,6 +47,6 @@ public class UIObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             return;
         }
         // Debug.Log("預留解說接口");
-        BaseFunctionsSceneController.Instance.ReadDialog(textName);
+        UIManager.Instance.ReadDialog(textName);
     }
 }

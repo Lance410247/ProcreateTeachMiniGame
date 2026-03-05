@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 添加各種參考的按鈕[w]
 [changeVariant,0]

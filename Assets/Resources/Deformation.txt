@@ -1,4 +1,5 @@
 [show,1]
+[c]
 [changeVariant,1]
 這裡的各種東西都很直白[wait,2000][c]
 自己試一下就能明白了[wait,2000][c]

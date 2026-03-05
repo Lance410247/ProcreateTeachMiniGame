@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 右上方的加號可以新增圖層[wait,2000][c]
 按助圖層往左滑可以叫出刪除選項[wait,1000][c]

@@ -22,7 +22,7 @@ public class Fingers : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        NextFinger();
+        //NextFinger();
         rectTransform = GetComponent<RectTransform>();
       //  Debug.Log(currentFinger);
         ChangeFingerImage(currentFinger);

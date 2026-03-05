@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 "阿爾法鎖定"[wait,1000][r]
 只能在上過顏色的地方作畫[wait,2000][c]

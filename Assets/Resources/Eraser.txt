@@ -1,4 +1,5 @@
 [show,1]
+[c]
 [changeVariant,1]
 PROCREATE沒有做專門的橡皮擦[wait,2000][c]
 跟筆一樣選擇喜歡的就OK了[wait,2000][c]

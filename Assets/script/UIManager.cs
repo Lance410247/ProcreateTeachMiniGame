@@ -1,3 +1,4 @@
+using Flower;
 using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -13,14 +14,23 @@ public class UIManager : MonoBehaviour
     public GameObject HighLightEffect;
     public GameObject HighLightEffectPanel;
     public GameObject narrator;
+    public FlowerSystem fs;
+    // public GameObject _dialogController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        fs = FlowerManager.Instance.CreateFlowerSystem("default", true);
         Instance = this;
-        SettingButtonImageChange(settingButtons[0]);
-        // 一開始全部關掉
-        foreach (var panel in toolPanels)
-            panel.SetActive(false);
+        try
+        {
+            SettingButtonImageChange(settingButtons[0]);
+            // 一開始全部關掉
+            foreach (var panel in toolPanels)
+                panel.SetActive(false);
+        }
+        catch {
+            Debug.Log("cant find  this object");
+        }
     }
 
     public void SettingButtonImageChange(GameObject button)
@@ -61,6 +71,25 @@ public class UIManager : MonoBehaviour
         {
             DisableImage(panel);
         }
+    }
+    /// <summary>
+    /// 改變物件狀態
+    /// </summary>
+    /// <param name="_object"></param>
+    public void ChangeObjectActive(GameObject _object) 
+    {
+        _object.SetActive(!_object.activeSelf);
+
+    }
+    /// <summary>
+    /// 讀取文本
+    /// </summary>
+    /// <param name="text"></param>
+    public void ReadDialog(string text)
+    {
+        fs.Stop();
+        fs.Resume();
+        fs.ReadTextFromResource(text);
     }
 
 }

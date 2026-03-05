@@ -1,4 +1,4 @@
-[show,1]
+[show,1][c]
 [changeVariant,1]
 調整畫布設定的按鈕[w]
 [changeVariant,0]
