@@ -7,6 +7,7 @@ public class GestureController : MonoBehaviour
     FlowerSystem fs;
     //public static BaseFunctionsSceneController Instance;
     public GameObject _pluralFingerLayer;
+    public GameObject hand;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,7 @@ public class GestureController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isPluralFingersLayerActive();
         if (Input.GetMouseButtonDown(0)) // ек┴ф
         {
             fs.Next();
@@ -30,6 +32,26 @@ public class GestureController : MonoBehaviour
         }
     }
 
+    public void isPluralFingersLayerActive()
+    {
+        if(hand.TryGetComponent<Fingers>(out var finger))
+        {
 
+           // Debug.Log("Don't Find script");
+        }
+
+        if ((int)finger.GetCurrentFinger()>1)
+        {
+           // Debug.Log((int)finger.GetCurrentFinger());
+            _pluralFingerLayer.SetActive(true);
+            UIManager.Instance.DisableAllImage();
+        }
+        else
+        {
+            //Debug.Log((int)finger.GetCurrentFinger());
+            _pluralFingerLayer.SetActive(false);
+        }
+
+    }
 
 }

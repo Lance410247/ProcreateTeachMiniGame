@@ -1558,7 +1558,7 @@ Canvas:
   m_GameObject: {fileID: 450073143}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -3109,13 +3109,14 @@ GameObject:
   - component: {fileID: 848515209}
   - component: {fileID: 848515211}
   - component: {fileID: 848515210}
+  - component: {fileID: 848515212}
   m_Layer: 8
   m_Name: CopyTool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &848515209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3173,6 +3174,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848515208}
   m_CullTransparentMesh: 1
+--- !u!114 &848515212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848515208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ee83c3bb44b3144bd487d17d4ad17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlight: {fileID: 1508334938}
+  isHovering: 0
+  textName: ' '
 --- !u!1 &925022470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,7 +3199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 925022472}
   - component: {fileID: 925022471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3577,7 +3593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.661}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -60.477036, y: -112.956055}
+  m_AnchoredPosition: {x: -112.8, y: 183.85}
   m_SizeDelta: {x: 225.6008, y: 513.8944}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1144783038
@@ -3830,6 +3846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pluralFingerLayer: {fileID: 97984853}
+  hand: {fileID: 1144783036}
 --- !u!1 &1211325874
 GameObject:
   m_ObjectHideFlags: 0

@@ -64,6 +64,10 @@ public class Fingers : MonoBehaviour
 
         ChangeFingerImage(currentFinger);
     }
+    public FingersNumber GetCurrentFinger()
+    {
+        return currentFinger;
+    }
     public void FollowMouse()
     {
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
