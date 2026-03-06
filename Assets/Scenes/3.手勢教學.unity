@@ -3653,6 +3653,8 @@ MonoBehaviour:
   - {fileID: -6336668822897178464, guid: d557157879ac14c44a03b10efa58fce3, type: 3}
   _gameObject: {fileID: 1144783036}
   currentFinger: 0
+  clickEffectPrefab: {fileID: 8771316210974920860, guid: 9be8745bbe2512947b20b411f26922d6, type: 3}
+  canvas: {fileID: 450073146}
   lockFingerChange: 0
 --- !u!1 &1203351267
 GameObject:

@@ -16,7 +16,8 @@ public class Fingers : MonoBehaviour
     private RectTransform rectTransform;
     [SerializeField]
     private FingersNumber currentFinger;
-
+    public GameObject clickEffectPrefab;
+    public Canvas canvas;
 
     public bool lockFingerChange=false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,7 +40,20 @@ public class Fingers : MonoBehaviour
                 NextFinger();
             }
         }
-        
+
+        if (Input.GetMouseButtonDown(0)) {
+            if (currentFinger == FingersNumber.OneFinger || currentFinger == FingersNumber.NoFinger)
+            {
+                SpawnEffect();
+            }
+            else if (currentFinger == FingersNumber.TwoFinger)
+            {
+
+            } else if (currentFinger == FingersNumber.ThirdFinger)
+            {
+
+            }
+        }
     }
     public void ChangeFingerImage(FingersNumber number)
     {
@@ -79,5 +93,14 @@ public class Fingers : MonoBehaviour
 
         rectTransform.anchoredPosition = localPos;
     }
-   
+    void SpawnEffect()
+    {
+        Vector2 pos = Input.mousePosition;
+
+        GameObject effect = Instantiate(clickEffectPrefab, canvas.transform);
+
+        effect.GetComponent<RectTransform>().position = pos;
+
+        Destroy(effect, 1f);
+    }
 }
