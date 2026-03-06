@@ -4735,7 +4735,7 @@ GameObject:
   - component: {fileID: 4474602292591088060}
   - component: {fileID: 5709584053217725501}
   m_Layer: 5
-  m_Name: UIParticle
+  m_Name: 1FingerFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4792,7 +4792,7 @@ MonoBehaviour:
   m_IsTrail: 0
   m_IgnoreCanvasScaler: 0
   m_AbsoluteMode: 0
-  m_Scale3D: {x: 25, y: 25, z: 25}
+  m_Scale3D: {x: 20, y: 20, z: 20}
   m_AnimatableProperties: []
   m_Particles:
   - {fileID: 5688989919910757559}
