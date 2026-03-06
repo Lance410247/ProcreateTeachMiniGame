@@ -1,3 +1,4 @@
+using Coffee.UIExtensions;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,9 +20,16 @@ public class Fingers : MonoBehaviour
     public GameObject clickEffectPrefab;
     public GameObject clickEffectPrefab2;
     public GameObject clickEffectPrefab3;
+    public GameObject dragEffect;
     public Canvas canvas;
 
     public bool lockFingerChange=false;
+    public float dragDistance = 150f; // 觸發距離
+
+    
+
+    private Vector2 startPos;
+    private bool isDragging = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -60,6 +68,34 @@ public class Fingers : MonoBehaviour
                 SpawnEffect(clickEffectPrefab3);
             }
         }
+        //按下滑鼠
+        if (Input.GetMouseButtonDown(0))
+        {
+            dragEffect.GetComponent<RectTransform>().position = rectTransform.position;
+            dragEffect.SetActive(true);
+            startPos = Input.mousePosition;
+            isDragging = true;
+        }
+
+        // 放開滑鼠
+        if (Input.GetMouseButtonUp(0) && isDragging)
+        {
+            Vector2 endPos = Input.mousePosition;
+
+            float dragY = startPos.y - endPos.y; // 往下拖才會是正值
+
+            if (dragY > dragDistance)
+            {
+                Debug.Log("成功拖行");
+                //SpawnObject();
+            }
+            dragEffect.SetActive(false);
+            SpawnEffect(clickEffectPrefab);
+            isDragging = false;
+        }
+
+
+
     }
     public void ChangeFingerImage(FingersNumber number)
     {
