@@ -44,7 +44,7 @@ public class GestureController : MonoBehaviour
         {
            // Debug.Log((int)finger.GetCurrentFinger());
             _pluralFingerLayer.SetActive(true);
-            UIManager.Instance.DisableAllImage();
+            //UIManager.Instance.DisableAllImage();
         }
         else
         {

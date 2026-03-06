@@ -1,6 +1,7 @@
 using Coffee.UIExtensions;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal.Internal;
 using UnityEngine.UI;
 public enum FingersNumber
 {
@@ -86,8 +87,12 @@ public class Fingers : MonoBehaviour
 
             if (dragY > dragDistance)
             {
-                Debug.Log("成功拖行");
-                //SpawnObject();
+                Debug.Log("成功拖行"+currentFinger);
+                if (currentFinger == FingersNumber.ThirdFinger)
+                {
+                    UIManager.Instance.ShowImage(UIManager.Instance.toolPanels[12]);
+                }
+                
             }
             dragEffect.SetActive(false);
             SpawnEffect(clickEffectPrefab);
