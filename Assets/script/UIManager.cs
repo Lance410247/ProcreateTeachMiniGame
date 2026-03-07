@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour
     public GameObject HighLightEffectPanel;
     public GameObject narrator;
     public FlowerSystem fs;
+
+    public bool playOption = false;
     // public GameObject _dialogController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -50,6 +52,19 @@ public class UIManager : MonoBehaviour
         fs.RegisterCommand("changeObjectActive", (List<string> _params) =>
         {
             fs.GetSceneObject(_params[0]).SetActive(!fs.GetSceneObject(_params[0]).activeSelf);
+        });
+        fs.RegisterCommand("SetPlayerOption", (List<string> _params) =>
+        {
+            //1是打開操作
+            //0是關閉操作
+            if (_params[0]=="1")
+            {
+                playOption = true;
+            }
+            else
+            {
+                playOption = false;
+            }
         });
         Instance = this;
         try

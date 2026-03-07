@@ -52,51 +52,56 @@ public class Fingers : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0)) {
-            if (currentFinger == FingersNumber.OneFinger || currentFinger == FingersNumber.NoFinger)
-            {
-                SpawnEffect(clickEffectPrefab);
-            }
-            else if (currentFinger == FingersNumber.TwoFinger)
-            {
-
-                SpawnEffect(clickEffectPrefab2);
-
-
-
-            } else if (currentFinger == FingersNumber.ThirdFinger)
-            {
-                SpawnEffect(clickEffectPrefab3);
-            }
-        }
-        //菲公
-        if (Input.GetMouseButtonDown(0))
+        if (UIManager.Instance.playOption)
         {
-            dragEffect.GetComponent<RectTransform>().position = rectTransform.position;
-            dragEffect.SetActive(true);
-            startPos = Input.mousePosition;
-            isDragging = true;
-        }
-
-        // 秨菲公
-        if (Input.GetMouseButtonUp(0) && isDragging)
-        {
-            Vector2 endPos = Input.mousePosition;
-
-            float dragY = startPos.y - endPos.y; // ┕╈穦琌タ
-
-            if (dragY > dragDistance)
+            if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Θ╈︽"+currentFinger);
-                if (currentFinger == FingersNumber.ThirdFinger)
+                if (currentFinger == FingersNumber.OneFinger || currentFinger == FingersNumber.NoFinger)
                 {
-                    UIManager.Instance.ShowImage(UIManager.Instance.toolPanels[12]);
+                    SpawnEffect(clickEffectPrefab);
                 }
-                
+                else if (currentFinger == FingersNumber.TwoFinger)
+                {
+
+                    SpawnEffect(clickEffectPrefab2);
+
+
+
+                }
+                else if (currentFinger == FingersNumber.ThirdFinger)
+                {
+                    SpawnEffect(clickEffectPrefab3);
+                }
             }
-            dragEffect.SetActive(false);
-            SpawnEffect(clickEffectPrefab);
-            isDragging = false;
+            //菲公
+            if (Input.GetMouseButtonDown(0))
+            {
+                dragEffect.GetComponent<RectTransform>().position = rectTransform.position;
+                dragEffect.SetActive(true);
+                startPos = Input.mousePosition;
+                isDragging = true;
+            }
+
+            // 秨菲公
+            if (Input.GetMouseButtonUp(0) && isDragging)
+            {
+                Vector2 endPos = Input.mousePosition;
+
+                float dragY = startPos.y - endPos.y; // ┕╈穦琌タ
+
+                if (dragY > dragDistance)
+                {
+                    Debug.Log("Θ╈︽" + currentFinger);
+                    if (currentFinger == FingersNumber.ThirdFinger)
+                    {
+                        UIManager.Instance.ShowImage(UIManager.Instance.toolPanels[12]);
+                    }
+
+                }
+                dragEffect.SetActive(false);
+                SpawnEffect(clickEffectPrefab);
+                isDragging = false;
+            }
         }
 
 
