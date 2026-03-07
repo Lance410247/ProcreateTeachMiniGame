@@ -24,7 +24,7 @@ public class UIObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // 滑鼠進入
     public void OnPointerEnter(PointerEventData eventData)
     {
-       
+        if (!UIManager.Instance.playOption) { return; }
         if (isHovering) return;
         isHovering = true;
          //Debug.Log("滑鼠進入");

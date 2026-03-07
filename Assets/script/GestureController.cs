@@ -17,6 +17,9 @@ public class GestureController : MonoBehaviour
         fs.SetupDialog("NarratorDialogPrefab");
         fs.ReadTextFromResource("gestureintro");
         fs.RegisterToSceneObject("PluralFingersLayer", _pluralFingerLayer);
+       //fs.SetTextList(new List<string> { "[changeObjectActive,PluralFingersLayer]" });
+
+        //   fs.R
     }
 
     // Update is called once per frame

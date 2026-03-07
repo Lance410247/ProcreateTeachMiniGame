@@ -94,11 +94,19 @@ public class Fingers : MonoBehaviour
                     Debug.Log("¦¨¥\©ì¦æ" + currentFinger);
                     if (currentFinger == FingersNumber.ThirdFinger)
                     {
+                        
                         UIManager.Instance.ShowImage(UIManager.Instance.toolPanels[12]);
                     }
 
                 }
-                dragEffect.SetActive(false);
+                else
+                {
+                    GameObject.Find("PaintingStep").TryGetComponent<PaintingStep>(out var paint);
+
+                    paint.FrontStep(currentFinger);
+                    paint.NextStep(currentFinger);
+                }
+                    dragEffect.SetActive(false);
                 SpawnEffect(clickEffectPrefab);
                 isDragging = false;
             }
@@ -127,9 +135,28 @@ public class Fingers : MonoBehaviour
     {
         int next = ((int)currentFinger + 1) % System.Enum.GetValues(typeof(FingersNumber)).Length;
         currentFinger = (FingersNumber)next;
-
+        ChangeFingerDialog();
         ChangeFingerImage(currentFinger);
     }
+
+    public void ChangeFingerDialog()
+    {
+        if (currentFinger==FingersNumber.TwoFinger)
+        {
+            UIManager.Instance.ReadDialog("TwoFinger");
+
+
+        }else if (currentFinger == FingersNumber.ThirdFinger)
+        {
+
+            UIManager.Instance.ReadDialog("ThirdFinger");
+        }
+
+
+
+    }
+
+
     public FingersNumber GetCurrentFinger()
     {
         return currentFinger;

@@ -10,7 +10,9 @@ public class PaintingStep : MonoBehaviour
     void Start()
     {
         _paintingStep =Resources.LoadAll<Sprite>("PaintingStep");
-       // Debug.Log(_paintingStep.Length);
+        this.TryGetComponent<Image>(out var image);
+        
+        // Debug.Log(_paintingStep.Length);
     }
 
     // Update is called once per frame

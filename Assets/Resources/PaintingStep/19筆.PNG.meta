@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 
+      name: "19\u7B46_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -136,7 +136,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       : -7159365250165098096
-      : -7159365250165098096
+      "19\u7B46_0": -7159365250165098096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

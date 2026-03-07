@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5cacfb4e23b265e4282788c1f280c09b
+guid: 145f7e9b9a2c82648b853bfb90d1cfbe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7538432707476432974
-    second: H
+      213: -1033061881246494994
+    second: "GlowHighLight\u5168\u900F\u660E_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "03\u7B46_0"
+      name: "00\u7B46_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2739
-        height: 2627
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b75ea3946b126790800000000000000
-      internalID: -7538432707476432974
+      spriteID: eee4e4141b3d9a1f0800000000000000
+      internalID: -1033061881246494994
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6bd2ec64d719ffd4297c5bf27937cace
+    spriteID: 5945a4df8b9489b4bad5d5ebbe5322ab
     internalID: 0
     vertices: []
     indices: 
@@ -135,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      : -7538432707476432974
-      "03\u7B46_0": -7538432707476432974
+      "00\u7B46_0": -1033061881246494994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

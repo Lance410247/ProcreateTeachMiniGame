@@ -17,7 +17,8 @@ public class UIManager : MonoBehaviour
     public GameObject narrator;
     public FlowerSystem fs;
 
-    public bool playOption = false;
+    public bool isDiaLogCanInterrupt=true;
+    public bool playOption = true;
     // public GameObject _dialogController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -64,6 +65,19 @@ public class UIManager : MonoBehaviour
             else
             {
                 playOption = false;
+            }
+        });
+        fs.RegisterCommand("isDiaLogCanInterrupt", (List<string> _params) =>
+        {
+            //1是打開操作
+            //0是關閉操作
+            if (_params[0] == "1")
+            {
+                isDiaLogCanInterrupt = true;
+            }
+            else
+            {
+                isDiaLogCanInterrupt = false;
             }
         });
         Instance = this;
@@ -133,8 +147,12 @@ public class UIManager : MonoBehaviour
     /// <param name="text"></param>
     public void ReadDialog(string text)
     {
-        fs.Stop();
-        fs.Resume();
+        if (!isDiaLogCanInterrupt) {
+            return;
+        }
+        
+        // fs.Stop();
+        //fs.Resume();
         fs.ReadTextFromResource(text);
     }
 

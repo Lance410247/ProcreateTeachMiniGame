@@ -3486,7 +3486,13 @@ MonoBehaviour:
   - {fileID: -6336668822897178464, guid: d557157879ac14c44a03b10efa58fce3, type: 3}
   _gameObject: {fileID: 1144783036}
   currentFinger: 0
+  clickEffectPrefab: {fileID: 8771316210974920860, guid: 9be8745bbe2512947b20b411f26922d6, type: 3}
+  clickEffectPrefab2: {fileID: 8771316210974920860, guid: 194f67ee2bff0c24abc626ff3d3d7149, type: 3}
+  clickEffectPrefab3: {fileID: 8771316210974920860, guid: 27eab6515c6357d4fa6967b18aa5cdd9, type: 3}
+  dragEffect: {fileID: 8771316210974920860, guid: 91cad4418abb2824d8a947254cefd402, type: 3}
+  canvas: {fileID: 450073146}
   lockFingerChange: 0
+  dragDistance: 150
 --- !u!1 &1203351267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3773,6 +3779,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4353,6 +4360,8 @@ MonoBehaviour:
   HighLightEffectPanel: {fileID: 14166773}
   narrator: {fileID: 69145110}
   fs: {fileID: 0}
+  isDiaLogCanInterrupt: 1
+  playOption: 1
 --- !u!1 &1487655852
 GameObject:
   m_ObjectHideFlags: 0
@@ -5439,6 +5448,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -5575,6 +5585,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
