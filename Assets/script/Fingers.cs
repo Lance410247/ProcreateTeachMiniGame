@@ -101,10 +101,17 @@ public class Fingers : MonoBehaviour
                 }
                 else
                 {
-                    GameObject.Find("PaintingStep").TryGetComponent<PaintingStep>(out var paint);
+                    try {
+                        GameObject.Find("PaintingStep").TryGetComponent<PaintingStep>(out var paint);
 
-                    paint.FrontStep(currentFinger);
-                    paint.NextStep(currentFinger);
+                        paint.FrontStep(currentFinger);
+                        paint.NextStep(currentFinger);
+                    }
+                    catch
+                    {
+                        
+                    }
+                    
                 }
                     dragEffect.SetActive(false);
                 SpawnEffect(clickEffectPrefab);

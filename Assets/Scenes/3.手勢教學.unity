@@ -380,9 +380,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variant:
-  - {fileID: 8621716969671638473, guid: d1e4ed8d3ac103a4e9c92f66ecd4e510, type: 3}
-  - {fileID: -5079535592362732908, guid: d1e4ed8d3ac103a4e9c92f66ecd4e510, type: 3}
-  - {fileID: -8154234835048731822, guid: d1e4ed8d3ac103a4e9c92f66ecd4e510, type: 3}
+  - {fileID: -6430861555296542746, guid: 1081720f0d4c5e742a31fa640539ce95, type: 3}
+  - {fileID: 1190152922116599147, guid: 1081720f0d4c5e742a31fa640539ce95, type: 3}
+  - {fileID: 4257190423357862704, guid: 1081720f0d4c5e742a31fa640539ce95, type: 3}
   _gameObject: {fileID: 69145110}
 --- !u!114 &69145113
 MonoBehaviour:
@@ -3889,6 +3889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pluralFingerLayer: {fileID: 97984853}
+  _paintingStep: {fileID: 1742436143}
   hand: {fileID: 1144783036}
 --- !u!1 &1211325874
 GameObject:
@@ -5775,6 +5776,7 @@ GameObject:
   - component: {fileID: 1742436147}
   - component: {fileID: 1742436146}
   - component: {fileID: 1742436145}
+  - component: {fileID: 1742436148}
   m_Layer: 9
   m_Name: PaintingStep
   m_TagString: Untagged
@@ -5798,7 +5800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.3416, y: -22.5367}
+  m_AnchoredPosition: {x: 0.0000038147, y: 17}
   m_SizeDelta: {x: 304.4403, y: 288.3427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742436145
@@ -5853,6 +5855,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742436143}
   m_CullTransparentMesh: 1
+--- !u!114 &1742436148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742436143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2725b8700697aaf4487a5b7b1b379640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1753175726
 GameObject:
   m_ObjectHideFlags: 0

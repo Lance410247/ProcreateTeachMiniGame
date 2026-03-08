@@ -29,7 +29,14 @@ public class PaintingStep : MonoBehaviour
         };
         */
     }
-
+    public int MaxStep()
+    {
+        return _paintingStep.Length-1;
+    }
+    public int CurrentStep()
+    {
+        return step;
+    }
     public void FrontStep(FingersNumber number)
     {
         if (step<=0) {

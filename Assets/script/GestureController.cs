@@ -7,6 +7,8 @@ public class GestureController : MonoBehaviour
     FlowerSystem fs;
     //public static BaseFunctionsSceneController Instance;
     public GameObject _pluralFingerLayer;
+
+    public GameObject _paintingStep;
     public GameObject hand;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +19,26 @@ public class GestureController : MonoBehaviour
         fs.SetupDialog("NarratorDialogPrefab");
         fs.ReadTextFromResource("gestureintro");
         fs.RegisterToSceneObject("PluralFingersLayer", _pluralFingerLayer);
-       //fs.SetTextList(new List<string> { "[changeObjectActive,PluralFingersLayer]" });
+       // fs.RegisterToSceneObject("PaintingStep", _paintingStep);
+        
+        fs.RegisterCommand("DrawExample", (List<string> _params) =>
+        {
+            //1是打開操作
+            //0是關閉操作
+            if (_params[0] == "1")
+            {
+                if (_paintingStep.TryGetComponent<DrawingExample>(out var drawExample))
+                {
+                    drawExample.DrawExample();
+                    
+                }
+            }
+            else
+            {
+               
+            }
+        });
+        //fs.SetTextList(new List<string> { "[changeObjectActive,PluralFingersLayer]" });
 
         //   fs.R
     }
