@@ -1,0 +1,13 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[SetObjectCanBeSelect,Reference,0]
+選擇你的線稿圖層[r]
+現在我們只有一個圖層[w]
+現在我們點選圖層額外功能
+[SetCorrectButton,LayerExtraButtonQC]
+[isDiaLogCanInterrupt,1]
+[SetPlayerOption,1]
+[changeVariant,0]
+

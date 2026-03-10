@@ -1,0 +1,11 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+現在我們點選額外功能的"參照"
+[SetObjectCanBeSelect,Reference,1]
+[SetCorrectButton,Reference]
+[isDiaLogCanInterrupt,1]
+[SetPlayerOption,1]
+[changeVariant,0]
+

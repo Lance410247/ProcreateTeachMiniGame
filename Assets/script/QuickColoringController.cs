@@ -9,6 +9,7 @@ public class QuickColoringController : MonoBehaviour
     public GameObject _pluralFingerLayer;
 
     public GameObject _paintingStep;
+    public int step = 0;
     public GameObject hand;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,9 +28,9 @@ public class QuickColoringController : MonoBehaviour
             //0是關閉操作
             if (_params[0] == "1")
             {
-                if (_paintingStep.TryGetComponent<DrawingExample>(out var drawExample))
+                if (_paintingStep.TryGetComponent< QuickColoringStep> (out var QuickColoringStep))
                 {
-                    drawExample.DrawExample();
+                    QuickColoringStep.ResetStep();
                     
                 }
             }
@@ -37,6 +38,22 @@ public class QuickColoringController : MonoBehaviour
             {
                
             }
+        });
+        fs.RegisterCommand("SetCorrectButton", (List<string> _params) =>
+        {
+            //1是打開操作
+            //0是關閉操作
+
+            var _object = GameObject.Find(_params[0]);
+            Debug.Log(_object.name);
+            _object.TryGetComponent<UIOBjectQC>(out var uIOBjectQC);
+
+            uIOBjectQC.SetCorrectFlag(true);
+
+
+
+
+          
         });
         //fs.SetTextList(new List<string> { "[changeObjectActive,PluralFingersLayer]" });
 
@@ -46,7 +63,7 @@ public class QuickColoringController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isPluralFingersLayerActive();
+        //isPluralFingersLayerActive();
         if (Input.GetMouseButtonDown(0)) // 左鍵
         {
             fs.Next();

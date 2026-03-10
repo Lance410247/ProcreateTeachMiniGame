@@ -1,0 +1,14 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[SetObjectCanBeSelect,Reference,0]
+我們新增了一個圖層[r]
+這樣底色就不會和線稿混在一起了[w]
+我們現在可以來上色了[r]
+我們先點擊空白處
+[SetCorrectButton,QuickColorLayer]
+[isDiaLogCanInterrupt,1]
+[SetPlayerOption,1]
+[changeVariant,0]
+

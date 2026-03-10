@@ -5,7 +5,7 @@ public class PaintingStep : MonoBehaviour
 {
     public GameObject Hand;
     public Sprite[] _paintingStep;
-    int step = 0;
+    public int step = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,6 +37,18 @@ public class PaintingStep : MonoBehaviour
     {
         return step;
     }
+    public void SpecificStep(int number) {
+
+        if (number>=0||number <= MaxStep())
+        {
+            this.TryGetComponent<Image>(out var image);
+            image.sprite = _paintingStep[number];
+            return;
+        }
+    
+
+    
+    }
     public void FrontStep(FingersNumber number)
     {
         if (step<=0) {
@@ -49,6 +61,12 @@ public class PaintingStep : MonoBehaviour
             image.sprite = _paintingStep[--step];
         }
         else { return; }
+    }
+    public void ResetStep()
+    {
+        this.TryGetComponent<Image>(out var image);
+        image.sprite = _paintingStep[0];
+        step = 0;
     }
     public void NextStep(FingersNumber number) 
     {

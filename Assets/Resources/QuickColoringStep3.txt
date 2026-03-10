@@ -1,0 +1,13 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[SetObjectCanBeSelect,Reference,0]
+現在我的的線稿圖層已經為參照圖層了[r]
+任何填色功能都會參照我們的線稿[w]
+現在點選新增圖層
+[SetCorrectButton,AddNewLayerButton]
+[isDiaLogCanInterrupt,1]
+[SetPlayerOption,1]
+[changeVariant,0]
+

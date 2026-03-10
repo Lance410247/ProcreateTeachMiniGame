@@ -80,6 +80,25 @@ public class UIManager : MonoBehaviour
                 isDiaLogCanInterrupt = false;
             }
         });
+        fs.RegisterCommand("SetObjectCanBeSelect", (List<string> _params) =>
+        {
+            //1是打開操作
+            //0是關閉操作
+            var _object = GameObject.Find(_params[0]);
+           // Debug.Log(_object.name);
+            _object.TryGetComponent<UIObject>(out var uIObject);
+            
+
+
+            if (_params[1] == "1")
+            {
+                uIObject.isCanBeSelect = true;
+            }
+            else
+            {
+                uIObject.isCanBeSelect = false;
+            }
+        });
         Instance = this;
         try
         {

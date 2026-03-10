@@ -30,7 +30,8 @@ public class Fingers : MonoBehaviour
     
 
     private Vector2 startPos;
-    private bool isDragging = false;
+   [SerializeField] private bool isDragging = false;
+    public bool IsDragging => isDragging;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -1,0 +1,12 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[SetObjectCanBeSelect,Reference,0]
+按住顏色按鈕後後拖曳到想要上色的區域
+
+[SetCorrectButton,QuickColorLayer]
+[isDiaLogCanInterrupt,1]
+[SetPlayerOption,1]
+[changeVariant,0]
+
