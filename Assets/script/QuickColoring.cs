@@ -32,7 +32,7 @@ public class QuickColoring : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void IsColorStarted()
     {
         hand.TryGetComponent<Fingers>(out var fingers);
-        if ( fingers.GetCurrentFinger() == FingersNumber.OneFinger)
+        if ( fingers.GetCurrentFinger() == FingersNumber.OneFinger|| fingers.GetCurrentFinger() == FingersNumber.NoFinger)
         {
             isColorStarted = true;
         }

@@ -1,0 +1,14 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[SetObjectCanBeSelect,Reference,0]
+現在我們自動選取範圍了[w]
+對著人物外的背景點一下
+[SetCorrectButton,QuickColorLayer]
+[ChangeCase,QuickColorLayer,2]
+[isDiaLogCanInterrupt,1]
+
+[SetPlayerOption,1]
+[changeVariant,0]
+

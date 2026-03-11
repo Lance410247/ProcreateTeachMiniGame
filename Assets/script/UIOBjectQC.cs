@@ -5,7 +5,9 @@ ShowImage,
 ShowExtraImage,
 ChangeImage,
 AddNewLayer,
-DisableAllImage
+DisableAllImage,
+isColorStarted,
+ReadDialog
 
 
 
@@ -68,6 +70,17 @@ public class UIOBjectQC : UIObject
                 case (int)QCCommend.DisableAllImage:
                     UIManager.Instance.DisableAllImage();
 
+
+                    break;
+                case (int)QCCommend.isColorStarted:
+
+                    this.TryGetComponent<QuickColoring>(out var qc);
+
+                    qc.IsColorStarted();
+
+
+                    break;
+                case (int) QCCommend.ReadDialog:
 
                     break;
 

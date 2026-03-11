@@ -1,0 +1,16 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[SetObjectCanBeSelect,Reference,0]
+
+確認當前不是在參照圖層[r]
+你不會想要上底色在你的線稿上
+[w]
+接著點選選取工具
+[SetCorrectButton,SelectButton_QC]
+[isDiaLogCanInterrupt,1]
+
+[SetPlayerOption,1]
+[changeVariant,0]
+

@@ -2,7 +2,7 @@ using UnityEngine;
 using Flower;
 using System.Collections.Generic;
  
-public class QuickColoringController : MonoBehaviour
+public class BinarizationController : MonoBehaviour
 {
     FlowerSystem fs;
     //public static BaseFunctionsSceneController Instance;
@@ -18,9 +18,9 @@ public class QuickColoringController : MonoBehaviour
         // UIManager.Instance._dialogController = this.gameObject;
         fs = UIManager.Instance.fs;
         fs.SetupDialog("NarratorDialogPrefab");
-        fs.ReadTextFromResource("QuickColoringintro");
+        fs.ReadTextFromResource("Binarizationintro");
         fs.RegisterToSceneObject("PluralFingersLayer", _pluralFingerLayer);
-        fs.RegisterToSceneObject("SelectedBG", _selectedBG);
+       
         // fs.RegisterToSceneObject("PaintingStep", _paintingStep);
 
         fs.RegisterCommand("DrawExample", (List<string> _params) =>

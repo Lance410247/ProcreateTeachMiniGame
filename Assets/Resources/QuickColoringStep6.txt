@@ -3,11 +3,11 @@
 [isDiaLogCanInterrupt,0]
 [SetPlayerOption,0]
 [SetObjectCanBeSelect,Reference,0]
-按住顏色按鈕後後拖曳到想要上色的區域[r]
-現在我們依照頭髮、臉、裙子的步驟上色
+很棒![r]
+接著是臉
 
 [SetCorrectButton,ColorButton_QC]
-[SetCorrectButton,hair]
+[SetCorrectButton,face]
 
 [isDiaLogCanInterrupt,1]
 [SetPlayerOption,1]
