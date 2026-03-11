@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f8e4cdf234e9fe46909ae2e787ec832
+guid: 70ffb2a264dade4478d28aab30f503b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7293699130609497080
-    second: "GlowHighLight\u534A\u900F\u660E\u908A\u68462_0"
+      213: -9193510401082471870
+    second: HandModel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "GlowHighLight\u534A\u900F\u660E\u908A\u68462_0"
+      name: HandModel_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 105
-        height: 105
+        width: 316
+        height: 316
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 10, y: 7, z: 9, w: 9}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80c027dc84397ca90800000000000000
-      internalID: -7293699130609497080
+      spriteID: 24ace90eff61a6080800000000000000
+      internalID: -9193510401082471870
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae1cb67e038e6a847851ab613a8a03b3
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "GlowHighLight\u534A\u900F\u660E\u908A\u68462_0": -7293699130609497080
+      HandModel_0: -9193510401082471870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

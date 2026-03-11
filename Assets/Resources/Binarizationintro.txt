@@ -1,7 +1,9 @@
+[SetPlayerOption,0]
+[isDiaLogCanInterrupt,0]
+[changeObjectActive,Opening]
 [changeVariant,1]
 [c]
-[isDiaLogCanInterrupt,0]
-[SetPlayerOption,0]
+
 接下來是最後一個小技巧[r]
 很抱歉學長沒有更多時間做了[w]
 二質化的最主要功能是找二分參考用的[w]

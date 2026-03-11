@@ -1,0 +1,14 @@
+[show,1]
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+
+免費的手部3D軟體[r]
+能夠用各種不同的角度觀察手部[w]
+[changeVariant,2]
+特點是能夠根據相機前的你自動判斷當前手型[r]
+蠻好玩的[w]
+[isDiaLogCanInterrupt,1]
+[changeVariant,0]
+
+[hide,1]

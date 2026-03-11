@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     public GameObject HighLightEffectPanel;
     public GameObject narrator;
     public FlowerSystem fs;
-
+    public GameObject opening;
     public bool isDiaLogCanInterrupt=true;
     public bool playOption = true;
     // public GameObject _dialogController;
@@ -99,6 +99,7 @@ public class UIManager : MonoBehaviour
                 uIObject.isCanBeSelect = false;
             }
         });
+        fs.RegisterToSceneObject("Opening", opening);
         Instance = this;
         try
         {

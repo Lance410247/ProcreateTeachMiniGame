@@ -1,7 +1,8 @@
+[SetPlayerOption,0]
+[isDiaLogCanInterrupt,0]
+[changeObjectActive,Opening]
 [changeVariant,1]
 [c]
-[isDiaLogCanInterrupt,0]
-[SetPlayerOption,0]
 接下來是一些小技巧[r]第一個: 快速填色[w]
 
 我們一樣先畫一個圖[DrawExample,1][w]

@@ -1,3 +1,4 @@
+[changeObjectActive,Opening]	
 [changeVariant,1]
 各位晚安[wait,2000][c]
 我叫繪繪[wait,2000][c]

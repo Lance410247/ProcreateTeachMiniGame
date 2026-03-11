@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &69145110
@@ -541,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &116783593
@@ -648,6 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &142021229
@@ -792,6 +795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &175940422
@@ -897,6 +901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &195883984
@@ -1002,6 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &315621733
@@ -1107,6 +1113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &316949254
@@ -1307,6 +1314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &416017186
@@ -1412,6 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &450073143
@@ -1512,6 +1521,7 @@ RectTransform:
   - {fileID: 69145111}
   - {fileID: 1589778221}
   - {fileID: 1144783037}
+  - {fileID: 1744531163}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1638,6 +1648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &502679573
@@ -1880,6 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &537872417
@@ -2001,6 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: BushButton
 --- !u!1 &538216651
@@ -2253,6 +2266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &572522542
@@ -2403,6 +2417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &599486589
@@ -2655,6 +2670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &669365761
@@ -2761,6 +2777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &720651885
@@ -2911,6 +2928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &817540067
@@ -3020,6 +3038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &925022470
@@ -3252,6 +3271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1093439289
@@ -3493,6 +3513,7 @@ MonoBehaviour:
   canvas: {fileID: 450073146}
   lockFingerChange: 0
   dragDistance: 150
+  isDragging: 0
 --- !u!1 &1203351267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,6 +3961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1224923672
@@ -4061,6 +4083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1357132019
@@ -4166,6 +4189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1415034653
@@ -4287,6 +4311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1418303427
@@ -4360,6 +4385,7 @@ MonoBehaviour:
   HighLightEffectPanel: {fileID: 14166773}
   narrator: {fileID: 69145110}
   fs: {fileID: 0}
+  opening: {fileID: 1744531160}
   isDiaLogCanInterrupt: 1
   playOption: 1
 --- !u!1 &1487655852
@@ -4451,6 +4477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1508334936
@@ -4661,6 +4688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1525360674
@@ -5019,6 +5047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1665518194
@@ -5140,6 +5169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1695418307
@@ -5245,8 +5275,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
+--- !u!1 &1744531160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744531163}
+  - component: {fileID: 1744531162}
+  - component: {fileID: 1744531161}
+  m_Layer: 5
+  m_Name: Opening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1744531161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744531160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1744531162
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744531160}
+  m_CullTransparentMesh: 1
+--- !u!224 &1744531163
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744531160}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 450073147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 32.83545, y: 13.55127}
+  m_SizeDelta: {x: 901.6059, y: 487.773}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1753175726
 GameObject:
   m_ObjectHideFlags: 0
@@ -5351,6 +5457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &1908218875
@@ -5736,6 +5843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &2031418219
@@ -5857,6 +5965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &2042596273
@@ -5978,6 +6087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &2046482666
@@ -6128,6 +6238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &2119247098
@@ -6278,6 +6389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 0}
+  isCanBeSelect: 1
   isHovering: 0
   textName: 
 --- !u!1 &2130871330

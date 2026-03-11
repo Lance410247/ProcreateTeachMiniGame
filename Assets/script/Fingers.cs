@@ -180,6 +180,10 @@ public class Fingers : MonoBehaviour
 
         rectTransform.anchoredPosition = localPos;
     }
+    public void LockFingersChange(bool i)
+    {
+        lockFingerChange = i;
+    }
     void SpawnEffect(GameObject Prefab)
     {
         

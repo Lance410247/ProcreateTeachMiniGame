@@ -1,7 +1,9 @@
+[SetPlayerOption,0]
+[isDiaLogCanInterrupt,0]
+[changeObjectActive,Opening]
 [changeVariant,1]
 [c]
-[isDiaLogCanInterrupt,0]
-[SetPlayerOption,0]
+
 接下來我們來進行[r]ProCreate手勢教學[w]
 
 我們先畫一個圖[DrawExample,1][changeVariant,0]

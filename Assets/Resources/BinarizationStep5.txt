@@ -6,13 +6,13 @@
 [DrawExample,2,2]
 這樣我們就非常方便觀察形狀了[w]
 二質化是很好用的工具[r]
-但他不是萬能的[w]
+但他不是萬能的[w][changeObjectActive,CarveController]
 如果參考物的固有色太深或太淺[w]
 他就有可能會被錯誤的歸類在陰影或亮面[w]
 這就只能自己判斷了[w]
-教學結束[w]
-[changeObjectActive,CarveController]
-希望這個沒用的小遊戲能幫助到你[w]
+
+
+希望這個小遊戲能幫助到你[w]
 
 [SetPlayerOption,1]
 [isDiaLogCanInterrupt,1]

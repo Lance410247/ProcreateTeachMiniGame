@@ -1,0 +1,16 @@
+[show,1]
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+
+免費的頭部3D軟體[r]
+能夠用各種不同的角度觀察頭部[w]
+[changeVariant,2]
+從複雜到簡單都有[r]
+課金可以解鎖更多模型[r]
+不過作為姿勢和光影參考，免費的就很夠用了[w]
+
+[isDiaLogCanInterrupt,1]
+[changeVariant,0]
+
+[hide,1]
