@@ -1,3 +1,4 @@
+[SetPlayerOption,0]
 [isDiaLogCanInterrupt,0]
 [changeObjectActive,Opening]
 
@@ -6,7 +7,7 @@
 [changeVariant,1]
 [c]
 
-[SetPlayerOption,0]
+
 最後我想分享一些我IPAD上常用的工具[r]
 以下四個都是IPad上能找到的，能很好的輔助你作畫[w]
 [changeVariant,2]
@@ -17,8 +18,9 @@
 有些電腦版限定的不在今天的介紹範圍[r]
 可以根據自身情況決定要不要用[w]
 [changeVariant,0]
-(介紹只有文字是因為學長沒時間了QQ)[w]
-[SetPlayerOption,1]
+(介紹只有文字是因為學長沒時間了TT)[w]
 [isDiaLogCanInterrupt,1]
+[SetPlayerOption,1]
+
 
 [hide,1]
