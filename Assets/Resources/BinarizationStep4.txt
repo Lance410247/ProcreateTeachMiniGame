@@ -1,0 +1,14 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[changeObjectActive,CarveController]
+
+接下來我們來使用拉動取線調整成接下來的樣子[r]
+老話一句，作者沒...(X)[w]
+點擊曲線就好
+[SetCorrectButton,CarveController]
+[SetPlayerOption,1]
+[isDiaLogCanInterrupt,1]
+[changeVariant,0]
+

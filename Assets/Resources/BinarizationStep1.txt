@@ -1,0 +1,11 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+然後點一下[r]
+色相、飽和度、亮度
+[SetCorrectButton,Saturation_ButtonBL]
+[SetPlayerOption,1]
+[isDiaLogCanInterrupt,1]
+[changeVariant,0]
+

@@ -1,0 +1,13 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[changeObjectActive,HSVController]
+現在我們可以調整彩度[w]
+把中間的飽和度往左拉到底[w]
+因為學長沒時間做所以點一下就好
+[SetCorrectButton,Saturation]
+[SetPlayerOption,1]
+[isDiaLogCanInterrupt,1]
+[changeVariant,0]
+

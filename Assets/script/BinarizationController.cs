@@ -8,7 +8,10 @@ public class BinarizationController : MonoBehaviour
     //public static BaseFunctionsSceneController Instance;
     public GameObject _pluralFingerLayer;
     public GameObject _selectedBG;
-    public GameObject _paintingStep;
+    public GameObject _paintingStep; 
+    public GameObject _HSVController;
+    public GameObject _CarveController;
+
     public int step = 0;
     public GameObject hand;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,9 +23,31 @@ public class BinarizationController : MonoBehaviour
         fs.SetupDialog("NarratorDialogPrefab");
         fs.ReadTextFromResource("Binarizationintro");
         fs.RegisterToSceneObject("PluralFingersLayer", _pluralFingerLayer);
-       
+        fs.RegisterToSceneObject("HSVController", _HSVController);
+        fs.RegisterToSceneObject("CarveController", _CarveController);
         // fs.RegisterToSceneObject("PaintingStep", _paintingStep);
+        fs.RegisterCommand("CarveChange", (List<string> _params) =>
+        {
+            //1是打開操作
+            //0是關閉操作
+            if (_params[0] == "1")
+            {
+                if (_CarveController.TryGetComponent<QuickColoringStep>(out var QuickColoringStep))
+                {
+                    QuickColoringStep.ResetStep();
 
+                }
+            }
+            else
+            {
+                if (_CarveController.TryGetComponent<QuickColoringStep>(out var QuickColoringStep))
+                {
+
+                    QuickColoringStep.SpecificStep(int.Parse(_params[1]));
+
+                }
+            }
+        });
         fs.RegisterCommand("DrawExample", (List<string> _params) =>
         {
             //1是打開操作

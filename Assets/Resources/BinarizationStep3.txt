@@ -1,0 +1,13 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+[changeObjectActive,HSVController]
+[DrawExample,2,1]
+接下來我們來使用曲線工具[r]
+點開曲線工具
+[SetCorrectButton,Curve_ButtonBL]
+[SetPlayerOption,1]
+[isDiaLogCanInterrupt,1]
+[changeVariant,0]
+

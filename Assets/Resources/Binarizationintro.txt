@@ -1,0 +1,16 @@
+[changeVariant,1]
+[c]
+[isDiaLogCanInterrupt,0]
+[SetPlayerOption,0]
+接下來是最後一個小技巧[r]
+很抱歉學長沒有更多時間做了[w]
+二質化的最主要功能是找二分參考用的[w]
+讓你能快速找到陰影形狀[w]
+以這張西裝參考圖為例[DrawExample,1][w]
+接著我們要來給他調色[r]
+打開特效工具:
+[SetCorrectButton,FX_ButtonBL]
+[SetPlayerOption,1]
+[isDiaLogCanInterrupt,1]
+[changeVariant,0]
+
